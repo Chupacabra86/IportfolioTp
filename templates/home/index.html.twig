@@ -7,11 +7,11 @@
 
 
 <div class="row">
-    <h2>COMPETENCES</h2>
-    {% for competence in competences %}
+    <h2>LANGAGES</h2>
+    {% for langage in langages %}
 
-    <p>{{ competence.title }}</p>
-    <p>{{ competence.niveau }}</p>
+    <p>{{ langage.title }}</p>
+    <p>{{ langage.niveau }}</p>
 
     {% endfor %}
 </div>
@@ -28,29 +28,40 @@
     <h3>texte zone 3</h3>
     <p>{{ texteInformations_2.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 4</h3>
     <p>{{ texteInformations_3.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 5</h3>
     <p>{{ texteLangages.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 6</h3>
     <p>{{ texteCurriculum_vitae.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 7</h3>
     <p>{{ texteRealisations.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 8</h3>
     <p>{{ texteCompetences.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 9</h3>
     <p>{{ texteTemoignages.texte }}</p>
 
-    <h3>texte zone 3</h3>
+    <h3>texte zone 10</h3>
     <p>{{ texteMe_contacter.texte }}</p>
 
 </div>
 
+<div class="row">
+    <h2>REALISATIONS</h2>
+    {% for realisation in realisations %}
+
+    <p>{{ realisation.titre }}</p>
+    <p>{{ realisation.description }}</p>
+    <p>{{ realisation.image }}</p>
+    <p>{{ realisation.categorie }}</p>
+
+    {% endfor %}
+</div>
 
 
 {% endblock %}

@@ -2,8 +2,8 @@
 
 namespace App\Entity;
 
-use App\Repository\LangagesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\LangagesRepository;
 
 /**
  * @ORM\Entity(repositoryClass=LangagesRepository::class)
